@@ -1,0 +1,18 @@
+# Created by フランク <@freed034> at Orsay - France
+# Modified at Firenze - Italy, February 2022
+
+* Description
+This is a repo with a custom configuration for emacs. It works with Linux and macOS.
+
+* Use
+The simple way to use the emacs files is made a symbolic link to your home folder. For that follow the next instructions (up to modification depending your operating system)
+
+- clone the repository in your computer
+  #+BEGIN_SRC
+    git clone https://gitlab.com/freed034/emacs.git
+  #+END_SRC
+  
+- make the follow symbolic link
+  #+BEGIN_SRC
+    ln -sf "path to the clone folder"/init.el ~/.emacs
+  #+END_SRC
