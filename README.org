@@ -12,7 +12,7 @@ The simple way to use these emacs files is made a symbolic link from the clone f
     git clone https://github.com/freed034/emacs-config.git
   #+END_SRC
   
-- make the follow symbolic link
+- make a follow symbolic link in your emacs folder
   #+BEGIN_SRC
-    ln -sf "path to the clone folder"/init.el ~/.emacs
+    ln -sf "path to the clone folder"/init.el ~/.emacs.d/
   #+END_SRC

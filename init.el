@@ -70,7 +70,7 @@
         (setq my_config (concat DIR "conf_arch.el")))
       (when (string-equal (which-linux-distribution) 'Ubuntu)
         (setq custom-file (concat DIR "custom_ubun.el"))
-        (setq my_config (concat "conf_ubun.el")))))
+        (setq my_config (concat DIR "conf_ubun.el")))))
 
 (if (system-is-mac)
     (progn
