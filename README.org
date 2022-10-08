@@ -4,7 +4,7 @@
 * Description
 This is a repo with my custom configuration for emacs. It works with Linux and macOS.
 
-* Use
+* Usage
 The simple way to use these emacs files is made a symbolic link from the clone folder to your home directory. You can follow the next instructions
 
 - clone the repository in your local system
