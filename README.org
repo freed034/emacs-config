@@ -1,18 +1,18 @@
 # Created by フランク <freed034@pm.me> at Orsay - France
-# Last modification made at Firenze - Italy
+# Modification made at Firenze - Italy and Lyon, France
 
 * Description
 This is a repo with my custom configuration for emacs. It works with Linux and macOS.
 
 * Usage
-The simple way to use these emacs files is made a symbolic link from the clone folder to your home directory. You can follow the next instructions
+The simple way to use those emacs files is made a symbolic link from the clone folder to your home directory. You can follow the next instructions
 
 - clone the repository in your local system
-  #+BEGIN_SRC
+  #+begin_src bash
     git clone https://github.com/freed034/emacs-config.git
-  #+END_SRC
+  #+end_src
   
-- create the follow symbolic link in your emacs folder
-  #+BEGIN_SRC
-    ln -sf "path to the clone folder"/init.el ~/.emacs.d/
-  #+END_SRC
+- create a symbolic link in the local emacs folder inside ~/.config
+  #+begin_src bash
+    ln -sf "path to the clone folder"/init.el ~/.config/emacs/
+  #+end_src
