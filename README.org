@@ -1,11 +1,11 @@
-# Created by フランク <freed034@pm.me> at Orsay - France
-# Modification made at Firenze - Italy and Lyon, France
+# Created by Frank Taipe (フランク) <freed034@pm.me> at Orsay - France
+# Modification made at Firenze - Italy and Lyon - France
 
 * Description
 This is a repo with my custom configuration for emacs. It works with Linux and macOS.
 
 * Usage
-The simple way to use those emacs files is made a symbolic link from the clone folder to your home directory. You can follow the next instructions
+The simple way to use those emacs files is made a symbolic link from the clone folder to your home directory. You can follow the next instructions:
 
 - clone the repository in your local system
   #+begin_src bash
