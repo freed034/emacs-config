@@ -1,5 +1,5 @@
-# Created by Frank Taipe (フランク) <freed034@pm.me> at Orsay - France
-# Modification made at Firenze - Italy and Lyon - France
+# Created by Frank Taipe (フランク) <freed034@pm.me> at Orsay - France (2021)
+# Important modification made at Firenze - Italy (2022)
 
 * Description
 This is a repo with my custom configuration for emacs. It works with Linux and macOS.

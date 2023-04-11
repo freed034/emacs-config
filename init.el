@@ -1,5 +1,5 @@
-;; Created by Frank Taipe (フランク) <freed034@pm.me> at Caen - France
-;; Modifications made at Orsay - France
+;; Created by Frank Taipe (フランク) <freed034@pm.me> at Caen - France (2015)
+;; Important modifications made at Orsay - France (2021)
 ;; URL: https://github.com/freed034/emacs-config
 
 ;;====================================================================
