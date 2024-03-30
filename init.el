@@ -7,8 +7,9 @@
 ;; Initial variables
 ;;====================================================================
 
-(setq user-DIR (concat (getenv "HOME") "/Repos/GLab/Emacs/"))
+(setq user-DIR (concat (getenv "HOME") "/.config/emacs/"))
 (setq user-emacs-directory (concat (getenv "HOME") "/.config/emacs/"))
+;; (setq user-manual-packages (concat user-DIR "packages"))
 
 ;;====================================================================
 ;; Set the package manager
@@ -28,7 +29,7 @@
 ;; Use-package
 ;;====================================================================
 
-;; use-package to simplify the config of each package
+;; use-package to simplify the config of for each package
 (unless (package-installed-p 'use-package)
   (package-refresh-contents)
   (package-install 'use-package))
@@ -96,18 +97,20 @@
       (when (string-equal (freed034/which-linux-distribution) 'Arch)
         (setq custom-file (concat user-DIR "custom_arch.el")
               config-file (concat user-DIR "config_arch.el")
+	      user-file (concat user-DIR "data/user_arch.el")
 	      mu4e-path-var "/usr/local/share/emacs/site-lisp/mu4e"))
       (when (string-equal (freed034/which-linux-distribution) 'Ubuntu)
         (setq custom-file (concat user-DIR "custom_ubuntu.el")
-              config-file (concat user-DIR "config_ubuntu.el")))))
+	      user-file (concat user-DIR "data/user_ubuntu.el")))))
 
 (if (freed034/system-is-mac)
       (setq custom-file (concat user-DIR "custom_macos.el")
             config-file (concat user-DIR "config_macos.el")
-            ;; The exact next path may differ, check it!
+	    user-file (concat user-DIR "data/user_macos.el")
+	    ;; the correct path may differ on your system, check it!
             mu4e-path-var "/usr/local/share/emacs/site-lisp/mu/mu4e"))
 
-;; Load the custom-file for customizations and the package list
+;; Load the custom file with customizations and the package list
 (load-file custom-file)
 
 ;; Installing packages
@@ -116,7 +119,13 @@
 ;; Load the path for mu4e
 (add-to-list 'load-path mu4e-path-var)
 
-;; Load the config-file with all the package configs
+;; Load the custom file with user informations
+(load-file user-file)
+
+;; Load the path for manually download packages
+;;(add-to-list 'load-path user-manual-packages)
+
+;; Load the custom file with all package configurations
 (load-file config-file)
 
 ;;====================================================================

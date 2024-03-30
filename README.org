@@ -1,23 +1,19 @@
-# Created by Frank Taipe (フランク) <freed034@pm.me> at Orsay - France (2021)
+# Created at Orsay - France (2021)
 # Mayor changes made at Firenze - Italy (2022)
+# Author: Frank Taipe (フランク) <freed034@pm.me>
 
 * Description
 This is a repo with my custom configuration for emacs. It works in Linux and macOS.
 
 * Usage
-The simple way to use those emacs files is made a symbolic link inside the local folder *~/.config/emacs/* to the *init.el* file in the clone folder. You can follow the next instructions:
+The simple way to use those emacs files is made the symbolic link *~/.config/emacs/* to the clone folder. You can follow the next instructions:
 
-- clone the repository in your own computer
+- clone the repository in your home directory
   #+begin_src bash
-    git clone https://github.com/freed034/emacs-config.git ~/emacs-config
-  #+end_src
-
-- create the local folder *.config/emacs* if it does not exist
-  #+begin_src bash
-    mkdir ~/.config/emacs
+    git clone https://github.com/freed034/emacs-config.git ~/Emacs
   #+end_src
   
-- make a symbolic link inside the local emacs folder *~/.config/emacs*
+- make the symbolic link *~/.config/emacs*
   #+begin_src bash
-    ln -sf ~/emacs-config/init.el ~/.config/emacs/init.el
+    ln -sf ~/Emacs ~/.config/emacs
   #+end_src
